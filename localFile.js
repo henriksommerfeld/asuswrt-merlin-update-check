@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs';
+import * as path from 'path';
 
-const savedVersionFilePath = './last-checked-version.txt'
+const savedVersionFilePath = path.resolve(path.resolve(''), './last-checked-version.txt');
 
 export function getLastCheckedVersion() {
   if (!existsSync(savedVersionFilePath)) {
