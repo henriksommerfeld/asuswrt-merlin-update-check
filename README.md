@@ -2,7 +2,7 @@
 
 Checks [the Asuswrt-Merlin web page](https://www.asuswrt-merlin.net/) by screen scraping for new version and send Pushover notification. 
 
-This script is a one time checker, so it needs to be scheduled to continuously check for updates. 
+This script is a one time checker, so it needs to be scheduled to continuously check for updates. It sends a notification even if there is no update, as I run this once a week and want to have a confirmation that the script is still running.
 
 I wrote this since the built-in checker currently doesn't work. I [previously used that](https://www.henriksommerfeld.se/firmware-update-notifications-for-my-asus-router/) to send notifications, so this is a fragile (screen scraping) workaround that I'll keep updated as long as I use it myself.
 
