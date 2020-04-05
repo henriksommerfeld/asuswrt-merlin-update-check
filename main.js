@@ -14,6 +14,10 @@ async function main() {
       sendPushoverNotification(message);
       saveLastCheckedVersion(latestVersion);
     }
+    else {
+      const message = `🤷‍♂️ No firmware released. ${latestVersion} is the latest.`;
+      sendPushoverNotification(message);
+    }
   } catch (error) {
     console.log("main -> error", error)
     const message = `⚠️ Router firmware update check failed`;
