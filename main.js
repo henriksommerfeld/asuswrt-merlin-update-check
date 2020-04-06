@@ -10,7 +10,9 @@ async function main() {
     const latestVersion = await getLatestStableVersion();
     
     if (latestVersion !== lastCheckedVersion) {
-      const message = `🔔 New firmware version ${latestVersion} is now available for your router`;
+      const message = `🔔 New firmware version ${latestVersion} is now available at 
+      
+      https://www.asuswrt-merlin.net/`;
       sendPushoverNotification(message);
       saveLastCheckedVersion(latestVersion);
     }
