@@ -9,16 +9,16 @@ export function sendPushoverNotification(message) {
     body: {
       token: `${process.env.PUSHOVER_TOKEN}`,
       user: `${process.env.PUSHOVER_USER}`,
-      message: message
+      message: message,
     },
-    json: true
+    json: true,
   };
 
   rp(options)
-    .then(function (parsedBody) {
+    .then(() => {
       console.log(`Pushover notification sent: ${message}`);
     })
-    .catch(function (err) {
+    .catch(err => {
       console.error(err);
     });
-  }
+}

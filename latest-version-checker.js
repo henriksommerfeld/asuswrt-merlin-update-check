@@ -7,7 +7,7 @@ export async function getLatestStableVersion() {
     const stableVersion = $('table tbody tr', html)
       .first()
       .text()
-      .split('\n')[2]
+      .split('\n')[1]
       .trim();
     return stableVersion;
   } catch (error) {
