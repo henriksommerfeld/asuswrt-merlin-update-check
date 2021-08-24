@@ -9,7 +9,6 @@ I wrote this since the built-in checker currently doesn't work. I [previously us
 ## Prerequisites
 
 - [Node](https://nodejs.org/en/) version specified in [`.nvmrc`](./.nvmrc)
-- [Yarn](https://yarnpkg.com/)
 
 ## Configuration
 
