@@ -6,12 +6,13 @@ async function main() {
   try {
     const lastCheckedVersion = getLastCheckedVersion();
     console.log('main -> lastCheckedVersion', lastCheckedVersion);
-    const latestVersion = await getLatestStableVersion();
+    const latestVersion = await getLatestStableVersion('RT-AC68U');
 
     if (latestVersion !== lastCheckedVersion) {
-      const message = `🔔 New firmware version ${latestVersion} is now available at 
-      
+      const message = `🔔 New firmware version ${latestVersion} is now available at
+
       https://www.asuswrt-merlin.net/`;
+      console.log('sending notification...');
       sendPushoverNotification(message);
       saveLastCheckedVersion(latestVersion);
     } else {

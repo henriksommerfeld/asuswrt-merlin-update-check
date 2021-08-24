@@ -11,9 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "1.0.0-rc.6",
-    "dotenv": "8.2.0",
-    "request": "2.88.2",
-    "request-promise": "4.2.6"
+    "axios": "^0.21.1",
+    "dotenv": "10.0.0",
+    "request-promise": "^4.2.6"
   }
 }
