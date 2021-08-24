@@ -7,6 +7,9 @@
   "scripts": {
     "start": "node ./main.js"
   },
+  "repository": {
+    "url": "https://github.com/henriksommerfeld/asuswrt-merlin-update-check"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
